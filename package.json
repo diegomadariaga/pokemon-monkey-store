@@ -1,12 +1,21 @@
 {
-  "name": "my-v0-project",
+  "name": "pokemon-monkey-store",
   "version": "0.1.0",
   "private": true,
+  "description": "Aplicación Next.js de cartas temáticas tipo Pokémon (monos) con Tailwind y Radix UI.",
+  "repository": "github:diegomadariaga/pokemon-monkey-store",
+  "homepage": "https://github.com/diegomadariaga/pokemon-monkey-store#readme",
+  "bugs": { "url": "https://github.com/diegomadariaga/pokemon-monkey-store/issues" },
+  "license": "MIT",
+  "keywords": ["nextjs", "cards", "pokemon", "monkeys", "typescript", "tailwind", "radix-ui"],
+  "engines": { "node": ">=18.18 <21" },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf .next dist coverage"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
